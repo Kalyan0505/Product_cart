@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div>
+          <h1>Product List</h1>
+          <div class="product" id="product1">
+            <h2>Product 1</h2>
+            <p>Price: 100</p>
+            <button onclick="decrement('product1')">-</button>
+            <span id="quantity-product1">0</span>
+            <button onclick="increment('product1')">+</button>
+          </div>
+          <div class="product" id="product2">
+            <h2>Product 2</h2>
+            <p>Price: 200</p>
+            <button onclick="decrement('product2')">-</button>
+            <span id="quantity-product2">0</span>
+            <button onclick="increment('product2')">+</button>
+          </div>
+          <div class="product" id="product3">
+            <h2>Product 3</h2>
+            <p>Price: 300</p>
+            <button onclick="decrement('product3')">-</button>
+            <span id="quantity-product3">0</span>
+            <button onclick="increment('product3')">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <h1>Cart</h1>
+        <p id="message">No Product added to the cart</p>
+
+        <h2 class="pdt1">Product 1 :<span id="quant-product1">0</span>x100</h2>
+        <h2 class="pdt1">Product 2 :<span id="quant-product2">0</span>x200</h2>
+        <h2 class="pdt3">Product 3 :<span id="quant-product3">0</span>x300</h2>
+        <h2 class="total">Total Cost: $<span id="totalCost">0</span></h2>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
