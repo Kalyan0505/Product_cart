@@ -23,9 +23,6 @@ function updateTotalCost() {
   totalCostElement.innerText = total;
   if (total === 0) {
     mess.style.display = "";
-    pdt1.style.display = "none";
-    pdt2.style.display = "none";
-    pdt3.style.display = "none";
   }
 }
 
